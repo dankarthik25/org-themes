@@ -1,6 +1,8 @@
 # -*- mode: org; -*-
 
 # +OPTIONS: html-style:nil
+#+OPTIONS: num:nil
+
 #+HTML_HEAD: <link rel="icon" type="image/png" href="https://deepalgorithms.in/assets/icons/favicon.png">
 
 # +HTML_HEAD: <link rel="stylesheet" type="text/css" href="./readtheorg-htmlize.css"/>

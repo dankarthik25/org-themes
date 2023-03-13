@@ -1,0 +1,84 @@
+#+TITLE: Document Title
+#+AUTHOR: Nomen Nescio
+#+DATE: [2021-05-08 Sat]
+#+EMAIL: nomen.nescio@dummy.com
+#+OPTIONS: num:nil
+#+PROPERTY: header-arg:tangle xmonad.el
+#+STARTUP: showeverything
+#+startup: num indent inlineimages
+# +auto_tangle: t
+
+
+# +OPTIONS: ^:nil p:t
+# +OPTIONS: toc:nil  Timestamp: nil toc:nil date:nil author:nil
+#+OPTIONS: broken-links:t
+
+# +SETUPFILE: ~/mynotes/org2html/org-theme-collection/theme-readtheorg.setup
+#+SETUPFILE: ~/mynotes/org2html/org-theme-collection/theme2.setup
+# +SETUPFILE:/home/karthik/mynotes/org2html/org-theme-collection/theme-readtheorg.setup
+
+
+source : https://lucidmanager.org/productivity/emacs-for-distraction-free-writing/
+source : https://lucidmanager.org/productivity/ricing-org-mode/
+
+
+source menu : https://lucidmanager.org/productivity/more-productive-with-emacs/
+* Doc Header or Meta data
+Each Org document starts with a header that contains metadata and settings relevant for the buffer. You need to at least provide a document title. The Org mode metadata and settings always start with #+ followed by a keyword and a colon. The example below ads a title and startup variables explained below. The document header can also contain metadata such as a subtitle or a date. Emacs packages can use this information when exporting the text.
+
+  #+title: Document Title
+  #+startup: num indent inlineimages
+  #+author: Nomen Nescio
+  #+date: [2021-05-08 Sat]
+
+
+
+* Image section 
+
+  #+caption: Image caption.
+  #+attr_html: :alt Alternative text
+  [[file:path/to/image]]
+   If you use the Helm completion system, you can preview the image as you select it with helm-follow-mode. When you are in the Helm selection session, toggle follow mode with C-c C-f. As you move the cursor, images will appear in anoter window.
+
+To view the preview images in your document or remove the previews, you press C-c C-x C-v. You can also add #+startup: inlineimages to view images by default.
+
+To add an image, press C-c C-l, which opens the link menu. Org mode understands many types of links. We want the file type, so type file:. Press enter and select the image filename in the mini buffer. You can skip the file part with the C-u C-c C-l shortcut (adding C-u before the standard shortcut.)
+
+After you enter the image, you preview it with the org-redisplay-inline-images function or C-c C-x C-M-v.
+
+You open a link in Org mode with a mouse click or by pressing C-c C-o with your cursor on the link text.
+
+The images in the buffer are all shown at the same width. The article about writing articles and books with Emacs and the article about creating websites with Emacs explains how to control image with and other image properties.
+
+You can increase or decrease the size of an image with the + and - keys.
+
+
+
+* Conf Text Mode in Org Mode
+ The original purpose of Emacs is to develop computer code, so by default, the editor does not wrap lines at the end of the screen. While this might be great for developing software, it is a bit annoying when writing prose. The visual-line-mode function enables line-wrapping. You can run the function separately for each buffer, but ideally, you hook it to all text modes.
+
+When you select (mark) a section of text and start typing, Emacs will not replace the selected text. To enable Emacs deleting selected text, you set the delete-selection-mode variable, as below.
+
+One last sensible default is to enure that Emacs lets you use the page-up and page-down buttons to go to the first and last line in the buffer.
+
+  ;; Sensible line breaking
+  (add-hook 'text-mode-hook 'visual-line-mode)
+  
+  ;; Overwrite selected text
+  (delete-selection-mode t)
+  
+  ;; Scroll to the first and last line of the buffer
+  (setq scroll-error-top-bottom t)
+
+The code snippet below sets some common keyboard shortcuts for creating links, viewing the agenda and capturing note, which are explained in other articles. You will also need to install use-package, which is explained article on how to configure Emacs.
+
+  ;; Org-Mode initial setup
+  (use-package org
+    :bind
+    (("C-c l" . org-store-link)
+     ("C-c a" . org-agenda)
+     ("C-c c" . org-capture)))
+
+     
+(org-bable-tangle)
+(org-bable-tangle-file "~/.emacs.d/myinit.org")

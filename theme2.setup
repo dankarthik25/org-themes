@@ -1,15 +1,22 @@
 # -*- mode: org; -*-
 
-# +OPTIONS: html-style:nil
-#+HTML_HEAD: <link rel="icon" type="image/png" href="https://deepalgorithms.in/assets/icons/favicon.png">
+#+OPTIONS: num:nil
 
-# +HTML_HEAD: <link rel="stylesheet" type="text/css" href="./readtheorg-htmlize.css"/>
-# +HTML_HEAD: <link rel="stylesheet" type="text/css" href="./readtheorg.css"/>
+#+HTML_HEAD: <link rel="icon" type="image/png" href="https://deepalgorithms.in/assets/icons/favicon.png">
 
 #+HTML_HEAD: <link rel="stylesheet" type="text/css" href="/home/karthik/mynotes/org2html/org-theme-collection/readtheorg-htmlize.css"/>
 #+HTML_HEAD: <link rel="stylesheet" type="text/css" href="/home/karthik/mynotes/org2html/org-theme-collection/readtheorg.css"/>
 
 #+HTML_HEAD: <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 #+HTML_HEAD: <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-#+HTML_HEAD: <script type="text/javascript" src="/home/karthik/mynotes/org2html/org-theme-collection/jquery-stickytableheaders.js"></script>
-#+HTML_HEAD: <script type="text/javascript"  src="/home/karthik/mynotes/org2html/org-theme-collection/readtheorg.js"></script>
+
+
+#+HTML_HEAD: <script type="text/javascript" src="https://fniessen.github.io/org-html-themes/src/lib/js/jquery.stickytableheaders.min.js"></script>
+#+HTML_HEAD: <script type="text/javascript" src="https://fniessen.github.io/org-html-themes/src/readtheorg_theme/js/readtheorg.js"></script>
+
+# # # # # # ##########################
+# NOTE this is giving rightside addtional space but form fniessen.github.io there is no rightside space so we are removeing this form our setup 
+# while converting from min js to beautiful js some thing might be missing due to which it is giving additional spaces at rightside
+# # # # # # ########################
+#    +HTML_HEAD: <script type="text/javascript" src="mynotes/org2html/org-theme-collection/jquery-stickytableheaders.js"></script>
+#    +HTML_HEAD: <script type="text/javascript"  src="mynotes/org2html/org-theme-collection/readtheorg.js"></script>
