@@ -3,10 +3,10 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2023-03-14 Tue 13:58 -->
+<!-- 2023-03-15 Wed 08:35 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Document Title</title>
+<title>Exporting Org to Beautiful Static Site</title>
 <meta name="author" content="Nomen Nescio" />
 <meta name="generator" content="Org Mode" />
 <style>
@@ -193,31 +193,77 @@
     { background-color: #ffff00; color: #000000; font-weight: bold; }
   .org-svg { }
 </style>
-<link rel="icon" type="image/png" href="https://deepalgorithms.in/assets/icons/favicon.png">
-<link rel="stylesheet" type="text/css" href="/home/karthik/mynotes/org2html/org-theme-collection/readtheorg-htmlize.css"/>
-<link rel="stylesheet" type="text/css" href="/home/karthik/mynotes/org2html/org-theme-collection/readtheorg.css"/>
+<link rel="icon" type="image/png" href="favicon.png">
+<link rel="stylesheet" type="text/css" href="readtheorg-htmlize.css"/>
+<link rel="stylesheet" type="text/css" href="readtheorg.css"/>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-<script type="text/javascript" src="https://fniessen.github.io/org-html-themes/src/lib/js/jquery.stickytableheaders.min.js"></script>
-<script type="text/javascript" src="https://fniessen.github.io/org-html-themes/src/readtheorg_theme/js/readtheorg.js"></script>
-<link rel="icon" type="image/png" href="https://deepalgorithms.in/assets/icons/favicon.png">
-<link rel="stylesheet" type="text/css" href="/home/karthik/mynotes/org2html/org-theme-collection/readtheorg-htmlize.css"/>
-<link rel="stylesheet" type="text/css" href="/home/karthik/mynotes/org2html/org-theme-collection/readtheorg.css"/>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-<script type="text/javascript" src="https://fniessen.github.io/org-html-themes/src/lib/js/jquery.stickytableheaders.min.js"></script>
-<script type="text/javascript" src="https://fniessen.github.io/org-html-themes/src/readtheorg_theme/js/readtheorg.js"></script>
+<script type="text/javascript" src="jquery-stickytableheaders.js"></script>
+<script type="text/javascript" src="readtheorg.js"></script>
+
 </head>
 <body>
 <div id="content" class="content">
-<h1 class="title">Document Title</h1>
+<h1 class="title">Exporting Org to Beautiful Static Site</h1>
 <div id="table-of-contents" role="doc-toc">
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents" role="doc-toc">
 <ul>
-<li><a href="#org5fde040">Doc Header or Meta data</a></li>
-<li><a href="#org20f4a71">Image section</a></li>
-<li><a href="#org445592d">Conf Text Mode in Org Mode</a></li>
+<li><a href="#org0f2c3c3">Upload static website in github</a></li>
+<li><a href="#org9d23ac3">Upload static website in gitlab <span class="timestamp-wrapper"><span class="timestamp">&lt;2023-03-15 Wed&gt;</span></span></a></li>
+<li><a href="#org095c7ab"><span class="done DONE">DONE</span> Doc Header or Meta data</a></li>
+<li><a href="#org8920c59">Image section</a></li>
+<li><a href="#orgfa26b1f">Conf Text Mode in Org Mode</a></li>
+<li><a href="#org40865c7">Org-Mode How to use</a>
+<ul>
+<li><a href="#org3c1c124">Org-MODE</a></li>
+<li><a href="#org695020e">Introduction</a></li>
+<li><a href="#orgabb6c7f"><span class="todo TODO">TODO</span> Expanding and Collapse org mode tree</a></li>
+<li><a href="#org9282962"><span class="todo TODO">TODO</span> Word Processing</a></li>
+<li><a href="#org0d1a8f1">Export the file to other formates</a></li>
+<li><a href="#orgee90046">Comment</a></li>
+<li><a href="#org990fce3">Lists</a></li>
+<li><a href="#org84da191">Header (M + RET)&#xa0;&#xa0;&#xa0;<span class="tag"><span class="Ecams">Ecams</span></span></a></li>
+<li><a href="#org120f4c7">TO CREATE A SUB BULLITE (M+ RET M+ -&gt;)</a></li>
+<li><a href="#org40d0be1">TO MOVE THE BULLITES PRESS ( M + UP)</a></li>
+<li><a href="#orga7aa697">TO CHANGE SUB BULLIES TO BULLITES  (M + -&gt; OR M + &lt;-)</a></li>
+<li><a href="#orge2e30a5"><span class="todo TODO">TODO</span> items</a></li>
+<li><a href="#org0826573"><span class="todo TODO">TODO</span> TO MARK ITEM AS TODO :</a></li>
+<li><a href="#org2db1ded"><span class="done DONE">DONE</span> to change item as DO : S + -&gt;</a></li>
+<li><a href="#orge2dcf74">CREATE CHECK BOX <code>[1/3]</code> : OR U CAN USE % FOR PERCENTAGE&#xa0;&#xa0;&#xa0;<span class="tag"><span class="CHECKBOX">CHECKBOX</span></span></a></li>
+<li><a href="#org4efd0d0">AGENDA VIEW</a></li>
+<li><a href="#org27bfe65">DATE AND TIME (NO TIME ZONE)</a></li>
+<li><a href="#orgc6e3587">Scheduling  Deadline for a task and Agenda</a></li>
+<li><a href="#orgd6f80af">Repeating task</a></li>
+<li><a href="#orgfea675b">Advance GENDA</a></li>
+<li><a href="#orgef6c1ab">Custamised agenda view</a></li>
+<li><a href="#orge443e45">LINKS</a></li>
+<li><a href="#orgb9f8ca6">To edit the link</a></li>
+<li><a href="#org5a6ff1c">Build table</a></li>
+<li><a href="#org7488455">View image in org</a></li>
+<li><a href="#org666cc40">Write Source Code, Quotes, Examples :</a>
+<ul>
+<li><a href="#orgef400df">Source Code (&lt;s ,&lt;se, &lt;ss )</a></li>
+<li><a href="#org8a595b0">To run the code in Block (C-c C-c)</a></li>
+<li><a href="#org08a5cf6">Quote (&lt;q)</a></li>
+<li><a href="#org7ce301e">Example (&lt;e)</a></li>
+</ul>
+</li>
+<li><a href="#orgeecd676">SEQ<sub>TODO</sub>: TODO(t) WAIT(w) | DONE(d)</a></li>
+<li><a href="#orgdc7ab87">set tags</a></li>
+</ul>
+</li>
+<li><a href="#org7760544">----------------------------------------------------------------</a>
+<ul>
+<li><a href="#org601fa71">SET TAGS FOR THE TASKS C-c C-c&#xa0;&#xa0;&#xa0;<span class="tag"><span class="ECAMS">ECAMS</span></span></a></li>
+<li><a href="#orgd39f6c5">BTech 1stYear&#xa0;&#xa0;&#xa0;<span class="tag"><span class="Education">Education</span>&#xa0;<span class="BTech">BTech</span>&#xa0;<span class="2008">2008</span></span></a></li>
+<li><a href="#orga02769c">Grossery List&#xa0;&#xa0;&#xa0;<span class="tag"><span class="Home">Home</span></span></a></li>
+<li><a href="#org8334c48">Java Coching&#xa0;&#xa0;&#xa0;<span class="tag"><span class="Education">Education</span>&#xa0;<span class="Tution">Tution</span></span></a></li>
+<li><a href="#org1f842ff">Orgmode E03S02: Splitting your system up to several files</a></li>
+</ul>
+</li>
+<li><a href="#org4a28db7">Replace jupyter with orgmode</a></li>
+<li><a href="#org5be04f2">Convert org to html with parameter</a></li>
 </ul>
 </div>
 </div>
@@ -229,9 +275,29 @@ source : <a href="https://lucidmanager.org/productivity/ricing-org-mode/">https:
 <p>
 source menu : <a href="https://lucidmanager.org/productivity/more-productive-with-emacs/">https://lucidmanager.org/productivity/more-productive-with-emacs/</a>
 </p>
-<div id="outline-container-org5fde040" class="outline-2">
-<h2 id="org5fde040">Doc Header or Meta data</h2>
-<div class="outline-text-2" id="text-org5fde040">
+
+<div id="outline-container-org0f2c3c3" class="outline-2">
+<h2 id="org0f2c3c3">Upload static website in github</h2>
+<div class="outline-text-2" id="text-org0f2c3c3">
+<p>
+<a href="https://www.youtube.com/watch?v=FgXLe_UyAxU">https://www.youtube.com/watch?v=FgXLe_UyAxU</a>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org9d23ac3" class="outline-2">
+<h2 id="org9d23ac3">Upload static website in gitlab <span class="timestamp-wrapper"><span class="timestamp">&lt;2023-03-15 Wed&gt;</span></span></h2>
+<div class="outline-text-2" id="text-org9d23ac3">
+<p>
+<a href="https://www.youtube.com/watch?v=lUZhoZXHb_w">https://www.youtube.com/watch?v=lUZhoZXHb_w</a>
+</p>
+</div>
+</div>
+
+
+<div id="outline-container-org095c7ab" class="outline-2">
+<h2 id="org095c7ab"><span class="done DONE">DONE</span> Doc Header or Meta data</h2>
+<div class="outline-text-2" id="text-org095c7ab">
 <p>
 Each Org document starts with a header that contains metadata and settings relevant for the buffer.<br />
 You need to at least provide a document title. <br />
@@ -254,9 +320,9 @@ Emacs packages can use this information when exporting the text.
 
 
 
-<div id="outline-container-org20f4a71" class="outline-2">
-<h2 id="org20f4a71">Image section</h2>
-<div class="outline-text-2" id="text-org20f4a71">
+<div id="outline-container-org8920c59" class="outline-2">
+<h2 id="org8920c59">Image section</h2>
+<div class="outline-text-2" id="text-org8920c59">
 <p alt="Alternative text">
 <a href="path/to/image" alt="Alternative text">path/to/image</a> <br />
 If you use the Helm completion system, you can preview the image as you select it with helm-follow-mode. When you are in the Helm selection session, toggle follow mode with C-c C-f. As you move the cursor, images will appear in anoter window. <br />
@@ -272,9 +338,9 @@ You can increase or decrease the size of an image with the + and - keys.<br />
 
 
 
-<div id="outline-container-org445592d" class="outline-2">
-<h2 id="org445592d">Conf Text Mode in Org Mode</h2>
-<div class="outline-text-2" id="text-org445592d">
+<div id="outline-container-orgfa26b1f" class="outline-2">
+<h2 id="orgfa26b1f">Conf Text Mode in Org Mode</h2>
+<div class="outline-text-2" id="text-orgfa26b1f">
 <p>
 The original purpose of Emacs is to develop computer code, so by default, the editor does not wrap lines at the end of the screen. While this might be great for developing software, it is a bit annoying when writing prose. The visual-line-mode function enables line-wrapping. You can run the function separately for each buffer, but ideally, you hook it to all text modes.
 When you select (mark) a section of text and start typing, Emacs will not replace the selected text. To enable Emacs deleting selected text, you set the delete-selection-mode variable, as below.
@@ -311,11 +377,577 @@ The code snippet below sets some common keyboard shortcuts for creating links, v
 </div>
 </div>
 </div>
+
+
+<div id="outline-container-org40865c7" class="outline-2">
+<h2 id="org40865c7">Org-Mode How to use</h2>
+<div class="outline-text-2" id="text-org40865c7">
+<p>
+source: <a href="https://orgmode.org/worg/org-tutorials/org4beginners.html">https://orgmode.org/worg/org-tutorials/org4beginners.html</a>
+</p>
+</div>
+<div id="outline-container-org3c1c124" class="outline-3">
+<h3 id="org3c1c124">Org-MODE</h3>
+<div class="outline-text-3" id="text-org3c1c124">
+<p>
+For more info visit <a href="https://orgmode.org/org.html">https://orgmode.org/org.html</a>
+</p>
+</div>
+</div>
+<div id="outline-container-org695020e" class="outline-3">
+<h3 id="org695020e">Introduction</h3>
+<div class="outline-text-3" id="text-org695020e">
+<p>
+Origally meant for orgranize  create todo list, schedule, do** TODO Data Abstractingc,latex,ppt,
+People use emacs only because of org mode
+</p>
+
+<p>
+Most important is we can Emacs Configuration file by Org-moDifference in Reference variable and pointer variable
+References are generally implemented using pointers. A reference is same object, just with a different name and reference must refer to an object. Since references can’t be NULL, they are safer to use.
+</p>
+
+<p>
+A pointer can be re-assigned while reference cannot, and must be assigned at initialization only.
+Pointer can be assigned NULL directly, whereas reference cannot.
+Pointers can iterate over an array, we can use ++ to go to the next item that a pointer is pointing to.
+A pointer is a variable that holds a memory address. A reference has the same memory address as the item it references.
+A pointer to a class/struct uses ‘-&gt;'(arrow operator) to access it’s members whereas a reference uses a ‘.'(dot operator)
+A pointer needs to be dereferenced with * to access the memory location it points to, whereas a reference can be used directly.de 
+</p>
+
+<p>
+We can export to html,pdf,latex,ppt&#x2026;.etc
+</p>
+
+<p>
+This tutorial we will Configure .emacs file
+</p>
+
+<div class="org-src-container">
+<pre class="src src-emacs-lisp">
+</pre>
+</div>
+
+<p>
+We can write many lang like c,c++,python,shell,lisp,emac-lisp
+</p>
+
+<p>
+What great about emacs-lisp is when we launch emacs all " emacs-lisp code" in ORG File is extrated in other file and this file is executed by Init file (.emacs)
+</p>
+
+<p>
+To create call all function in  Init file we use a function called org-babel
+</p>
+
+<div class="org-src-container">
+<pre class="src src-emacs-lisp"><span style="color: #3a81c3;">(</span>org-babel-load-file <span style="color: #6c3163;">(</span>expand-file-name <span style="color: #2d9574;">"~/.emacs.d/myconfig.org"</span><span style="color: #6c3163;">)</span><span style="color: #3a81c3;">)</span>
+</pre>
+</div>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<tbody>
+<tr>
+<td class="org-left">cmd</td>
+<td class="org-left">ORG function</td>
+</tr>
+
+<tr>
+<td class="org-left">&lt;s</td>
+<td class="org-left">Create the block to insert code</td>
+</tr>
+
+<tr>
+<td class="org-left">C-c '</td>
+<td class="org-left">open window to insert code</td>
+</tr>
+
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+</tbody>
+</table>
+
+
+
+<p>
+M-x org-mode          To view in org mode
+</p>
+
+
+
+
+<p>
+Press tab in heading  
+</p>
+</div>
+</div>
+<div id="outline-container-orgabb6c7f" class="outline-3">
+<h3 id="orgabb6c7f"><span class="todo TODO">TODO</span> Expanding and Collapse org mode tree</h3>
+<div class="outline-text-3" id="text-orgabb6c7f">
+<p>
+&lt;Tab&gt;    
+S-&lt;Tab&gt;         To expand adn collapse all 
+</p>
+</div>
+</div>
+<div id="outline-container-org9282962" class="outline-3">
+<h3 id="org9282962"><span class="todo TODO">TODO</span> Word Processing</h3>
+<div class="outline-text-3" id="text-org9282962">
+<p>
+For <b>bold</b> , <i>italics</i> , <span class="underline">underscore</span> , <code>code</code>, <code>verbatin</code> , <del>adsfad</del>,
+</p>
+</div>
+</div>
+<div id="outline-container-org0d1a8f1" class="outline-3">
+<h3 id="org0d1a8f1">Export the file to other formates</h3>
+<div class="outline-text-3" id="text-org0d1a8f1">
+<p>
+C-c C-e           - export to file/select text to html,latex,pdf
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgee90046" class="outline-3">
+<h3 id="orgee90046">Comment</h3>
+<div class="outline-text-3" id="text-orgee90046">
+</div>
+</div>
+<div id="outline-container-org990fce3" class="outline-3">
+<h3 id="org990fce3">Lists</h3>
+<div class="outline-text-3" id="text-org990fce3">
+<ul class="org-ul">
+<li>entry
+<ul class="org-ul">
+<li>subentry 1</li>
+<li>subentry2</li>
+</ul></li>
+</ul>
+<p>
+-entry 2
+</p>
+<ul class="org-ul">
+<li>my 1st change
+-sublist
+-sublist2</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org84da191" class="outline-3">
+<h3 id="org84da191">Header (M + RET)&#xa0;&#xa0;&#xa0;<span class="tag"><span class="Ecams">Ecams</span></span></h3>
+</div>
+<div id="outline-container-org120f4c7" class="outline-3">
+<h3 id="org120f4c7">TO CREATE A SUB BULLITE (M+ RET M+ -&gt;)</h3>
+</div>
+<div id="outline-container-org40d0be1" class="outline-3">
+<h3 id="org40d0be1">TO MOVE THE BULLITES PRESS ( M + UP)</h3>
+</div>
+<div id="outline-container-orga7aa697" class="outline-3">
+<h3 id="orga7aa697">TO CHANGE SUB BULLIES TO BULLITES  (M + -&gt; OR M + &lt;-)</h3>
+</div>
+<div id="outline-container-orge2e30a5" class="outline-3">
+<h3 id="orge2e30a5"><span class="todo TODO">TODO</span> items</h3>
+</div>
+<div id="outline-container-org0826573" class="outline-3">
+<h3 id="org0826573"><span class="todo TODO">TODO</span> TO MARK ITEM AS TODO :</h3>
+<div class="outline-text-3" id="text-org0826573">
+<p>
+S + (Righ arrow/ left arrow )     toggle normal, TODO,DONE
+C-c C-t                           toggle norma, TODO,DONE 
+</p>
+</div>
+</div>
+<div id="outline-container-org2db1ded" class="outline-3">
+<h3 id="org2db1ded"><span class="done DONE">DONE</span> to change item as DO : S + -&gt;</h3>
+</div>
+<div id="outline-container-orge2dcf74" class="outline-3">
+<h3 id="orge2dcf74">CREATE CHECK BOX <code>[1/3]</code> : OR U CAN USE % FOR PERCENTAGE&#xa0;&#xa0;&#xa0;<span class="tag"><span class="CHECKBOX">CHECKBOX</span></span></h3>
+<div class="outline-text-3" id="text-orge2dcf74">
+<ul class="org-ul">
+<li class="on"><code>[X]</code> FLOWERS : TO TICK MARK THE ITEM C-C C-C  &amp; TO UNTICK MARK SAME</li>
+<li class="off"><code>[&#xa0;]</code> FRUITS</li>
+<li class="off"><code>[&#xa0;]</code> PAY BILL</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org4efd0d0" class="outline-3">
+<h3 id="org4efd0d0">AGENDA VIEW</h3>
+<div class="outline-text-3" id="text-org4efd0d0">
+<p>
+IN ORG MODE PROVIDE THE AGENDA VIEW TO MANGE AND VIEW TODO LIST &amp; DEADLINES
+COMMAND : C-C[  : ENABLE AGENDA VIEW
+TO VIEW : 
+M-X ORG    - AGENDA  VIEW
+M-x org-agenda-view
+M-x org-agenda-year-view(y)
+</p>
+
+<p>
+C-C A      – AGENDA
+C-C [      – ADD DOCUMENT TO THE LIST OF AGENDA FILES
+C-C ]      – REMOVE DOCUMENT FROM THE LIST OF AGENDA FILES
+C-C .      – ADD DATE
+C-U C-C .  – ADD TIME AND DATE
+C-G        – STOP DOING WHAT YOU ARE TRYING TO DO, ESCAPE
+</p>
+
+
+<p>
+IF SCREEN SPLIT THEN DO C-C 0
+</p>
+</div>
+</div>
+
+<div id="outline-container-org27bfe65" class="outline-3">
+<h3 id="org27bfe65">DATE AND TIME (NO TIME ZONE)</h3>
+<div class="outline-text-3" id="text-org27bfe65">
+<p>
+C-C .          – ADD DATE<span class="timestamp-wrapper"><span class="timestamp">&lt;2018-08-07 Tue&gt;</span></span>
+S-&lt;UP/DOWN&gt;    - CHANGE + OR -   
+C-U C-C . – ADD TIME AND DATE
+</p>
+</div>
+</div>
+<div id="outline-container-orgc6e3587" class="outline-3">
+<h3 id="orgc6e3587">Scheduling  Deadline for a task and Agenda</h3>
+<div class="outline-text-3" id="text-orgc6e3587">
+<p>
+C-c C-s : Schedule or M-x org-schedule
+C-c C-d : Calender is show and date is selected
+C-u C-c . : inset current date and time
+</p>
+
+<p>
+Agenda
+C-c a
+</p>
+
+<p>
+Follow mode with Shift F
+To view next -week shcedule : F
+To view previous =-week schedule: B
+</p>
+</div>
+</div>
+<div id="outline-container-orgd6f80af" class="outline-3">
+<h3 id="orgd6f80af">Repeating task</h3>
+<div class="outline-text-3" id="text-orgd6f80af">
+<p>
+<a href="https://www.youtube.com/watch?v=nbC-gL5wcf4&amp;list=PLVtKhBrRV_ZkPnBtt_TD1Cs9PJlU0IIdE&amp;index=5">https://www.youtube.com/watch?v=nbC-gL5wcf4&amp;list=PLVtKhBrRV_ZkPnBtt_TD1Cs9PJlU0IIdE&amp;index=5</a>
++1w
++1d
++4w
+(w=week, d=day, m=month, y=year)
+</p>
+</div>
+</div>
+<div id="outline-container-orgfea675b" class="outline-3">
+<h3 id="orgfea675b">Advance GENDA</h3>
+<div class="outline-text-3" id="text-orgfea675b">
+<p>
+<a href="https://www.youtube.com/watch?v=u00pglDfgX4&amp;list=PLVtKhBrRV_ZkPnBtt_TD1Cs9PJlU0IIdE&amp;index=8">https://www.youtube.com/watch?v=u00pglDfgX4&amp;list=PLVtKhBrRV_ZkPnBtt_TD1Cs9PJlU0IIdE&amp;index=8</a>
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgef6c1ab" class="outline-3">
+<h3 id="orgef6c1ab">Custamised agenda view</h3>
+<div class="outline-text-3" id="text-orgef6c1ab">
+<p>
+<a href="https://www.youtube.com/watch?v=PJ3qHIl-eOM&amp;list=PLVtKhBrRV_ZkPnBtt_TD1Cs9PJlU0IIdE&amp;index=8">https://www.youtube.com/watch?v=PJ3qHIl-eOM&amp;list=PLVtKhBrRV_ZkPnBtt_TD1Cs9PJlU0IIdE&amp;index=8</a>
+</p>
+</div>
+</div>
+<div id="outline-container-orge443e45" class="outline-3">
+<h3 id="orge443e45">LINKS</h3>
+<div class="outline-text-3" id="text-orge443e45">
+<ul class="org-ul">
+<li><a href="http://google.com">http://google.com</a></li>
+<li><a href="http://google.com">Google</a></li>
+</ul>
+
+<p>
+<a href="http://google.com">Google</a>  
+</p>
+</div>
+</div>
+<div id="outline-container-orgb9f8ca6" class="outline-3">
+<h3 id="orgb9f8ca6">To edit the link</h3>
+<div class="outline-text-3" id="text-orgb9f8ca6">
+<p>
+C-c C-l
+</p>
+</div>
+</div>
+<div id="outline-container-org5a6ff1c" class="outline-3">
+<h3 id="org5a6ff1c">Build table</h3>
+<div class="outline-text-3" id="text-org5a6ff1c">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Table</th>
+<th scope="col" class="org-left">contenat</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">asdf</td>
+<td class="org-left">dsfsdfsdfeasdfasd</td>
+</tr>
+
+<tr>
+<td class="org-left">sfsdf</td>
+<td class="org-left">dfsdfasdf</td>
+</tr>
+
+<tr>
+<td class="org-left">dEDd</td>
+<td class="org-left">adfdsff</td>
+</tr>
+
+<tr>
+<td class="org-left">ED</td>
+<td class="org-left">DDE</td>
+</tr>
+
+<tr>
+<td class="org-left">df</td>
+<td class="org-left">fsdl</td>
+</tr>
+
+<tr>
+<td class="org-left">asdf'</td>
+<td class="org-left">adfa</td>
+</tr>
+
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+</tbody>
+</table>
+
+<p>
+what happen if expot it ?
+</p>
+</div>
+</div>
+<div id="outline-container-org7488455" class="outline-3">
+<h3 id="org7488455">View image in org</h3>
+<div class="outline-text-3" id="text-org7488455">
+<p>
+Add the following code to my init.el file:
+</p>
+<pre class="example">
+(setq org-image-actual-width nil)
+</pre>
+
+
+<p>
+<a href="https://orgmode.org/manual/Images.html">https://orgmode.org/manual/Images.html</a>
+</p>
+
+<p>
+Then insert this code in my document, where I want the image to appear:
+</p>
+<pre class="example">
+#+ATTR_ORG: :width 300
+[[./my_image.jpg]]
+# [C-c C-x C-v] to toggle image
+</pre>
+
+
+<p>
+On executing org-toggle-inline-images the image appears in the buffer, 300px wide, as expected.
+</p>
+
+
+
+<div id="org3ffcd24" class="figure">
+<p><img src="file:///home/karthik/mynotes/MTechCard.jpg" alt="MTechCard.jpg" />
+</p>
+</div>
+</div>
+</div>
+<div id="outline-container-org666cc40" class="outline-3">
+<h3 id="org666cc40">Write Source Code, Quotes, Examples :</h3>
+<div class="outline-text-3" id="text-org666cc40">
+</div>
+<div id="outline-container-orgef400df" class="outline-4">
+<h4 id="orgef400df">Source Code (&lt;s ,&lt;se, &lt;ss )</h4>
+<div class="outline-text-4" id="text-orgef400df">
+<p>
+Babble is a subtool used to insert code (c,c++,py,shell,lisp,elisp&#x2026;etc)
+Eg:
+shortcut : " &lt;s TAB  "
+</p>
+<div class="org-src-container">
+<pre class="src src-sh"><span style="color: #3a81c3;">echo</span> <span style="color: #2d9574;">"Hello world"</span> <span style="color: #2aa1ae; background-color: #ecf3ec;"># </span><span style="color: #2aa1ae; background-color: #ecf3ec;">C-c C-c to run the code in the brackests</span>
+</pre>
+</div>
+
+<p>
+Note : org-bable package is required to run the code in org-mod
+</p>
+</div>
+</div>
+<div id="outline-container-org8a595b0" class="outline-4">
+<h4 id="org8a595b0">To run the code in Block (C-c C-c)</h4>
+<div class="outline-text-4" id="text-org8a595b0">
+<p>
+m nn
+move the cursor to the +begin line and press C-c C-c 
+</p>
+</div>
+</div>
+<div id="outline-container-org08a5cf6" class="outline-4">
+<h4 id="org08a5cf6">Quote (&lt;q)</h4>
+<div class="outline-text-4" id="text-org08a5cf6">
+<p>
+short cut : " 
+&lt;q TAB "
+</p>
+
+<blockquote>
+<p>
+Do me the favor, do me the biggest favor, matter of fact do yourself the biggest favor and integrate those into your workflow.
+</p>
+</blockquote>
+</div>
+</div>
+<div id="outline-container-org7ce301e" class="outline-4">
+<h4 id="org7ce301e">Example (&lt;e)</h4>
+<div class="outline-text-4" id="text-org7ce301e">
+<pre class="example" id="org6501bd2">
+ASFDASDFDSAFSFDSDFASDF
+ASDADFSFAD Sasdfasdf
+</pre>
+
+<p>
+short cut:  "  &lt;e  TAB  "
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgeecd676" class="outline-3">
+<h3 id="orgeecd676">SEQ<sub>TODO</sub>: TODO(t) WAIT(w) | DONE(d)</h3>
+<div class="outline-text-3" id="text-orgeecd676">
+<p>
+<a href="https://www.youtube.com/watch?v=15w3I6MwCfs&amp;list=PLVtKhBrRV_ZkPnBtt_TD1Cs9PJlU0IIdE&amp;index=2">https://www.youtube.com/watch?v=15w3I6MwCfs&amp;list=PLVtKhBrRV_ZkPnBtt_TD1Cs9PJlU0IIdE&amp;index=2</a>
+</p>
+
+<p>
+C-c C-t set todo
+with colour  visit <a href="https://emacs.stackexchange.com/questions/4104/how-to-put-todo-faces-in-the-file">https://emacs.stackexchange.com/questions/4104/how-to-put-todo-faces-in-the-file</a>
+</p>
+
+<p>
+OrgMode E03S01: Automatic logging of status changes
+7,115 views
+Jun 19, 2016
+</p>
+
+<p>
+<a href="https://www.youtube.com/watch?v=R4QSTDco_w8&amp;list=PLVtKhBrRV_ZkPnBtt_TD1Cs9PJlU0IIdE&amp;index=11">https://www.youtube.com/watch?v=R4QSTDco_w8&amp;list=PLVtKhBrRV_ZkPnBtt_TD1Cs9PJlU0IIdE&amp;index=11</a>
+</p>
+</div>
+</div>
+<div id="outline-container-orgdc7ab87" class="outline-3">
+<h3 id="orgdc7ab87">set tags</h3>
+<div class="outline-text-3" id="text-orgdc7ab87">
+<p>
+<a href="https://www.youtube.com/watch?v=GcUVvlClo9k&amp;list=PLVtKhBrRV_ZkPnBtt_TD1Cs9PJlU0IIdE&amp;index=7">https://www.youtube.com/watch?v=GcUVvlClo9k&amp;list=PLVtKhBrRV_ZkPnBtt_TD1Cs9PJlU0IIdE&amp;index=7</a>
+</p>
+</div>
+</div>
+</div>
+<div id="outline-container-org7760544" class="outline-2">
+<h2 id="org7760544">----------------------------------------------------------------</h2>
+<div class="outline-text-2" id="text-org7760544">
+</div>
+<div id="outline-container-org601fa71" class="outline-3">
+<h3 id="org601fa71">SET TAGS FOR THE TASKS C-c C-c&#xa0;&#xa0;&#xa0;<span class="tag"><span class="ECAMS">ECAMS</span></span></h3>
+</div>
+<div id="outline-container-orgd39f6c5" class="outline-3">
+<h3 id="orgd39f6c5">BTech 1stYear&#xa0;&#xa0;&#xa0;<span class="tag"><span class="Education">Education</span>&#xa0;<span class="BTech">BTech</span>&#xa0;<span class="2008">2008</span></span></h3>
+</div>
+<div id="outline-container-orga02769c" class="outline-3">
+<h3 id="orga02769c">Grossery List&#xa0;&#xa0;&#xa0;<span class="tag"><span class="Home">Home</span></span></h3>
+</div>
+<div id="outline-container-org8334c48" class="outline-3">
+<h3 id="org8334c48">Java Coching&#xa0;&#xa0;&#xa0;<span class="tag"><span class="Education">Education</span>&#xa0;<span class="Tution">Tution</span></span></h3>
+<div class="outline-text-3" id="text-org8334c48">
+<p>
+In tags we can search in current exiting by pressing tab
+</p>
+</div>
+</div>
+
+<div id="outline-container-org1f842ff" class="outline-3">
+<h3 id="org1f842ff">Orgmode E03S02: Splitting your system up to several files</h3>
+<div class="outline-text-3" id="text-org1f842ff">
+<p>
+<a href="https://www.youtube.com/watch?v=ECWtf6mAi9k&amp;list=PLVtKhBrRV_ZkPnBtt_TD1Cs9PJlU0IIdE&amp;index=12">https://www.youtube.com/watch?v=ECWtf6mAi9k&amp;list=PLVtKhBrRV_ZkPnBtt_TD1Cs9PJlU0IIdE&amp;index=12</a>
+</p>
+</div>
+</div>
+</div>
+<div id="outline-container-org4a28db7" class="outline-2">
+<h2 id="org4a28db7">Replace jupyter with orgmode</h2>
+<div class="outline-text-2" id="text-org4a28db7">
+<p>
+<a href="https://rgoswami.me/posts/jupyter-orgmode/">https://rgoswami.me/posts/jupyter-orgmode/</a>
+</p>
+</div>
+</div>
+<div id="outline-container-org5be04f2" class="outline-2">
+<h2 id="org5be04f2">Convert org to html with parameter</h2>
+<div class="outline-text-2" id="text-org5be04f2">
+<p>
+<a href="https://orgmode.org/worg/org-tutorials/org-publish-html-tutorial.html">https://orgmode.org/worg/org-tutorials/org-publish-html-tutorial.html</a>
+</p>
+
+<p>
+<a href="https://lucidmanager.org/productivity/create-websites-with-org-mode-and-hugo/">https://lucidmanager.org/productivity/create-websites-with-org-mode-and-hugo/</a>
+</p>
+
+<p>
+<a href="https://niklasfasching.github.io/go-org/#headline-2">https://niklasfasching.github.io/go-org/#headline-2</a>
+</p>
+
+
+<p>
+<a href="https://www.mail-archive.com/emacs-orgmode@gnu.org/msg18072.html">https://www.mail-archive.com/emacs-orgmode@gnu.org/msg18072.html</a>
+</p>
+</div>
+</div>
 </div>
 <div id="postamble" class="status">
 <p class="date">Date: 2021-05-08 Sat 00:00</p>
 <p class="author">Author: Nomen Nescio</p>
-<p class="date">Created: 2023-03-14 Tue 13:58</p>
+<p class="date">Created: 2023-03-15 Wed 08:35</p>
 <p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>

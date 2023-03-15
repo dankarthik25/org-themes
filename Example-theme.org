@@ -1,4 +1,4 @@
-#+TITLE: Document Title
+#+TITLE: Exporting Org to Beautiful Static Site
 #+AUTHOR: Nomen Nescio
 #+DATE: [2021-05-08 Sat]
 #+EMAIL: nomen.nescio@dummy.com
@@ -26,13 +26,21 @@ source : https://lucidmanager.org/productivity/ricing-org-mode/ \\
 source menu : https://lucidmanager.org/productivity/more-productive-with-emacs/
 
 * Upload static website in github 
+DEADLINE: <2023-03-15 Wed> SCHEDULED: <2023-02-01 Wed>
 https://www.youtube.com/watch?v=FgXLe_UyAxU
 
-* Upload static website in gitlab
+* TODO Upload static website in gitlab <2023-03-15 Wed>
+:LOGBOOK:
+- State "DONE"       from "NEXT"       [2023-03-15 Wed 08:46]
+:END:
 https://www.youtube.com/watch?v=lUZhoZXHb_w
 
 
-* Doc Header or Meta data
+* DONE Doc Header or Meta data
+CLOSED: [2023-03-15 Wed 08:34] SCHEDULED: <2023-03-14 Tue>
+:LOGBOOK:
+- State "DONE"       from "NEXT"       [2023-03-15 Wed 08:34]
+:END:
 Each Org document starts with a header that contains metadata and settings relevant for the buffer.\\
 You need to at least provide a document title. \\
 The Org mode metadata and settings always start with #+ followed by a keyword and a colon. \\
